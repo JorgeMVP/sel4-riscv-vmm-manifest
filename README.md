@@ -19,6 +19,8 @@ make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- defconfig
 make ARCH=riscv CROSS_COMPILE=riscv64-buildroot-linux-gnu- -j $(nproc)
 ```
 
+or follow the link: https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+
 ## 28/09/21
 Single- and Multi-core version support (Experimental).
 
