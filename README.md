@@ -2,6 +2,23 @@ The code is experimental and not maintained as the same degree as our other proj
 
 Update:
 
+## 03/10/21
+
+Linux compilation.
+
+Download the toolchain: https://toolchains.bootlin.com/
+```console
+export PATH=<path-to-your-cross-compiler>/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-linux-ubuntu14/bin:$PATH
+```
+
+Build Linux Image
+```console
+git clone git@github.com:JorgeMVP/riscv-linux-5.2.git
+cd riscv-linux-5.2/
+make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- defconfig
+make ARCH=riscv CROSS_COMPILE=riscv64-buildroot-linux-gnu- -j $(nproc)
+```
+
 ## 28/09/21
 Single- and Multi-core version support (Experimental).
 
@@ -23,7 +40,7 @@ repo sync
 
 and build it
 ```console
-export PATH=<PATH>/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-linux-ubuntu14/bin:$PATH
+export PATH=<path-to-your-cross-compiler>/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-linux-ubuntu14/bin:$PATH
 mkdir bld
 cd bld
 ../init-build.sh -DPLATFORM=spike -DRISCV64=1 -DCROSS_COMPILER_PREFIX=riscv64-unknown-elf-
