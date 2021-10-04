@@ -14,6 +14,7 @@
   <remote fetch="../seL4" name="seL4"/>
   <remote fetch="." name="sel4proj"/>
   <remote fetch="https://github.com/riscv" name="opensbi"/>
+  <remote fetch="https://github.com/JorgeMVP" name="JorgeMVP"/>
   
   <default remote="seL4" revision="master"/>
   
