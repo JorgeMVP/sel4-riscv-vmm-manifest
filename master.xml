@@ -11,7 +11,7 @@
      @TAG(DATA61_BSD)
 -->
 <manifest>
-  
+  <remote fetch="../seL4" name="seL4"/>
   <remote fetch="." name="sel4proj"/>
   <remote fetch="https://github.com/riscv" name="opensbi"/>
   
