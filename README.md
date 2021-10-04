@@ -36,7 +36,7 @@ make -j16
 
 Download using repo tool
 ```console
-repo init -u https://github.com/SEL4PROJ/sel4-riscv-vmm-manifest.git -m master.xml
+repo init -u https://github.com/JorgeMVP/sel4-riscv-vmm-manifest.git -m master.xml
 repo sync
 ```
 
