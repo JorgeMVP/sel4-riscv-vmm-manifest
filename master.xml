@@ -34,4 +34,5 @@
   </project>
   
   <project name="opensbi" remote="opensbi" revision="a98258d0b537a295f517bbc8d813007336731fa9" path="tools/opensbi"/>
+  <project name="util_libs.git" path="projects/util_libs" revision="8ed42ff66c586ab2b6dc32f678e00764453754f0" upstream="master"/>
 </manifest>
